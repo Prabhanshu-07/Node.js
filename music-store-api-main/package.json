@@ -1,0 +1,55 @@
+{
+  "name": "music-shop-api",
+  "version": "0.0.0",
+  "description": "This is a node js api for a music store",
+  "keywords": [
+    "NodeJS",
+    "Demo",
+    "API"
+  ],
+  "author": "Praveen <admin@admin.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "cli": "node ./cli/index.js",
+    "test": "mocha -r ts-node/register 'test/**/*.spec.ts'",
+    "dev": "nodemon",
+    "build": "tsc",
+    "graphql": "nodemon ./server/graphql/server.js",
+    "serve": "node ./server/application.js",
+    "start:prod": "pm2 start",
+    "pm2": "pm2"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.9.4",
+    "axios": "^1.5.1",
+    "bcrypt": "^5.1.1",
+    "chalk": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "graphql": "^16.8.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.2",
+    "socket.io": "^4.7.2",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.9",
+    "@types/express": "^4.17.20",
+    "@types/mocha": "^10.0.3",
+    "@types/node": "^20.8.6",
+    "@types/sinon": "^10.0.20",
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.1",
+    "sinon": "^17.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "pm2": "^5.3.0"
+  }
+}
